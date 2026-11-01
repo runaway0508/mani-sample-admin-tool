@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block body %}<main><div class="card" style="max-width:340px;margin:60px auto">
+<h2>Admin login</h2>{% if error %}<p class="low">Wrong password</p>{% endif %}
+<form method="post" action="/login" class="row"><input type="password" name="password" placeholder="Password" required><button>Log in</button></form>
+</div></main>{% endblock %}
